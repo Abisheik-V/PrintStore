@@ -2,13 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/PrintStore/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://i.pinimg.com/1200x/6e/76/b9/6e76b91685d0ae8d2c0401889ae9391b.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shop</title>
+    <title>P&S Shop</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script>
+      (function() {
+        var l = window.location;
+        var params = new URLSearchParams(l.search);
+        var p = params.get('p');
+        if (p) {
+          var newUrl = l.origin + p + (params.get('q') || "") + l.hash;
+          window.history.replaceState(null, "", newUrl);
+        }
+      })();
+    </script>
     <script type="module" crossorigin src="/PrintStore/assets/index-4OVmotjm.js"></script>
     <link rel="stylesheet" crossorigin href="/PrintStore/assets/index-DQ03aeSe.css">
   </head>
   <body>
     <div id="root"></div>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+        
