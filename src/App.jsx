@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Index from './components/Index';
 import Products from './components/Products';
 import HowItWorks from './components/How-it-works';
@@ -17,7 +17,7 @@ import ApplyProgram from './components/Apply-program';
 
 function App() {
   return (
-    <BrowserRouter basename="/PrintStore">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/products" element={<Products />} />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/partner-program" element={<PartnerProgram />} />
         <Route path="/apply-program" element={<ApplyProgram />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
