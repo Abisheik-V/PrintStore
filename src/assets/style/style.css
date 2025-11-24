@@ -1,0 +1,233 @@
+.pod-app {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f8f9fb;
+}
+
+.pod-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+}
+
+.pod-logo {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.pod-nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.pod-nav-links .pod-nav-link {
+  font-size: 0.95rem;
+  color: #343a40;
+}
+
+.pod-nav-links .pod-nav-link:hover {
+  color: #000;
+}
+
+.pod-mobile-nav {
+  margin-top: 0.75rem;
+}
+
+.pod-hero {
+  background: radial-gradient(circle at top left, #f0f4ff 0, #f8f9fb 45%, #ffffff 100%);
+}
+
+.pod-hero-title {
+  font-size: clamp(2.2rem, 3.2vw, 3rem);
+  font-weight: 700;
+}
+
+.pod-hero-subtitle {
+  font-size: 1.02rem;
+  max-width: 34rem;
+}
+
+.pod-hero-preview {
+  border-radius: 1.25rem;
+}
+
+.pod-product-grid .pod-product-card {
+  background: #f8f9fa;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+.pod-product-thumb {
+  border-radius: 0.75rem;
+  height: 64px;
+}
+
+.pod-product-thumb-tee {
+  background: linear-gradient(135deg, #e5f0ff, #f0f4ff);
+}
+
+.pod-product-thumb-mug {
+  background: linear-gradient(135deg, #fff3cd, #ffe8a1);
+}
+
+.pod-product-thumb-poster {
+  background: linear-gradient(135deg, #e2f7f2, #c8f1e6);
+}
+
+.pod-section {
+  scroll-margin-top: 5rem;
+}
+
+.pod-section-muted {
+  background: #f1f3f5;
+}
+
+.pod-section-title {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.pod-card,
+.pod-step-card,
+.pod-stat-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.pod-card-product {
+  border: 1px solid #e9ecef;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.pod-card-product:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+.pod-card-img {
+  height: 170px;
+  border-radius: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.pod-card-product .pod-card-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pod-card-product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.pod-card-product-price {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pod-list {
+  padding-left: 1.2rem;
+}
+
+.pod-list li {
+  margin-bottom: 0.25rem;
+}
+
+.pod-step-card {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-left: 3.75rem;
+}
+
+.pod-step-number {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #000;
+  color: #fff;
+}
+
+.pod-stat-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+.pod-feature-list {
+  border-radius: 1.25rem;
+}
+
+.pod-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pod-faq-item {
+  border-radius: 0.75rem;
+  padding: 1rem 1.1rem;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.pod-faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pod-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pod-faq-item[open] {
+  border: 1px solid #dee2e6;
+}
+
+.pod-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pod-footer-list li {
+  margin-bottom: 0.25rem;
+}
+
+.pod-footer-list a {
+  color: #ced4da;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.pod-footer-list a:hover {
+  color: #ffffff;
+}
+
+.pod-footer-form input::placeholder {
+  color: #adb5bd;
+}
+
+@media (max-width: 767.98px) {
+  .pod-hero-title {
+    font-size: 1.9rem;
+  }
+
+  .pod-card,
+  .pod-step-card,
+  .pod-stat-card {
+    padding: 1.25rem;
+  }
+}
+
